@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Flash Food</title>
+        <style>
+            * {
+                padding: 0;
+                margin: 0;
+                box-sizing: border-box;
+                font-family: 'Courier New', Courier, monospace;
+            }
+
+            .heading {
+                background-color: rgb(61, 30, 68);
+                margin-bottom: 30px;
+                padding: 30px 0;
+                text-align: center;
+                grid-column: 1/-1;
+                color: #ff4057;
+                
+            }
+
+            .menu {
+                padding: 0 10px 30px 10px;
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            }
+
+            .item_1 {
+                display: grid;
+                position:relative;
+                grid-template-rows: auto, 1fr;
+                border-radius: 15px;
+                box-shadow: 0 0 15px black;
+                margin-bottom: 40px;
+                margin-left: 10px;
+                margin-right: 10px;
+            }
+
+            .item_1 img {
+                position: relative;
+                width: 100%;
+                border-radius: 15px 15px 0 0 ;
+            }
+
+            .details {
+                padding: 20px 10px;
+                display: grid;
+                grid-template-rows: auto, 1fr, 50px;
+                grid-row-gap: 15px;
+            }
+
+            .details-sub {
+                display: grid;
+                grid-template-columns: auto auto;
+            }
+            
+            .details-sub h4 {
+                font-weight: 600;
+                font-size: 18px;
+            }
+            .price {
+                text-align: right;
+            }
+
+            .details button {
+                background-color: #ff4057;
+                border: none;
+                color: white;
+                font-size: 16px;
+                font-weight: 600;
+                height: 60px;
+                border-radius: 5px;
+            }
+
+            .sub-heading {
+                font-size: 40px;
+                text-align: center;
+                margin-bottom: 20px;
+                display: block;
+            }
+
+            .topnav a {
+                margin-left: 40px;
+                margin-right: 10px;
+                text-decoration: none;
+                font-size: 25px;
+                font-weight: 500;
+                color: #ff4057;
+            }
+            .topnav a:hover {
+                background-color: black;
+                border-radius: 5px;
+                font-weight: 600;
+            }
+            .active {
+                    background-color: rgb(140, 75, 75);
+                    border-radius: 5px;
+                }
+            
+        </style>
+    </head>
+    <body>
+        <nav style="background-color: rgba(40,38,52,255); display: flex; justify-content: space-between; align-items: center;">
+            
+            <a href="1.html" >
+              <img src="logo.jpg" alt="Logo" width="70" height="70">
+            </a>
+            <div class="topnav" style="display: flex;">
+              <a href="1.html">Home</a>
+              <a class="active" href="2.html">Menu</a>
+              <a  href="3.html">About Us</a>
+            </div>
+            
+        </nav>
+        <div class="heading">
+            <h1>Flash Food's Menu</h1>
+            <h2>&mdash; Menu &mdash;</h2>
+        </div>
+        <div class="menu">
+            <div class="item_1">
+                <img src="https://betterbegrilled.com/wp-content/uploads/2017/08/20170803_115235-1920x1080.jpg">
+                <div class="details">
+                    <div class="details-sub">
+                        <h4>5 Wings</h4>
+                        <h4 class="price">4.99$</h4>
+                    </div>
+                    <button>Order</button>
+                </div>
+            </div>
+            <div class="item_1">
+                <img src="https://betterbegrilled.com/wp-content/uploads/2017/08/20170803_115235-1920x1080.jpg">
+                <div class="details">
+                    <div class="details-sub">
+                        <h4>10 Wings</h4>
+                        <h4 class="price">9.99$</h4>
+                    </div>
+                    <button>Order</button>
+                </div>
+            </div>
+            <div class="item_1">
+                <img src="https://preview.redd.it/846gf3fupmc21.jpg?auto=webp&s=ef96d636f1fdfc0981c0505365722c0aeeb433ae">
+                <div class="details">
+                    <div class="details-sub">
+                        <h4>Double Cheese Burger</h4>
+                        <h4 class="price">7.99$</h4>
+                    </div>
+                    <button>Order</button>
+                </div>
+            </div>
+            <div class="item_1">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2mwiXKwYFOmsXaBCdcjHNHPSuv82DX6qQsg&usqp=CAU">
+                <div class="details">
+                    <div class="details-sub">
+                        <h4>Fish Burger</h4>
+                        <h4 class="price">8.99$</h4>
+                    </div>
+                    <button>Order</button>
+                </div>
+            </div>
+            <div class="item_1">
+                <img src="https://wallpaperaccess.com/full/4393872.jpg">
+                <div class="details">
+                    <div class="details-sub">
+                        <h4>Chicken Burger</h4>
+                        <h4 class="price">7.99$</h4>
+                    </div>
+                    <button>Order</button>
+                </div>
+            </div>
+            <div class="item_1">
+                <img src="https://cdn.sanity.io/images/p6oh2x2n/production/b5073bf7f032d6a612c17e7fd15d76545deb9a38-1920x1080.png">
+                <div class="details">
+                    <div class="details-sub">
+                        <h4>Beef Tacos</h4>
+                        <h4 class="price">6.99$</h4>
+                    </div>
+                    <button>Order</button>
+                </div>
+            </div>
+            <div class="item_1">
+                <img src="https://images.alphacoders.com/280/280233.jpg">
+                <div class="details">
+                    <div class="details-sub">
+                        <h4>Coaca Cola</h4>
+                        <h4 class="price">1.99$</h4>
+                    </div>
+                    <button>Order</button>
+                </div>
+            </div>
+            <div class="item_1">
+                <img src="https://wallpaperaccess.com/full/1277472.png">
+                <div class="details">
+                    <div class="details-sub">
+                        <h4>Coaca Cola</h4>
+                        <h4 class="price">1.99$</h4>
+                    </div>
+                    <button>Order</button>
+                </div>
+            </div>
+            <div class="item_1">
+                <img src="data:image/png;base64,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">
+                <div class="details">
+                    <div class="details-sub">
+                        <h4>Coaca Cola</h4>
+                        <h4 class="price">1.99$</h4>
+                    </div>
+                    <button>Order</button>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
